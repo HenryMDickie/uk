@@ -9,12 +9,12 @@ public class UI_Parser{
 		if (owner != null) {
 			owner.update()
 			}
-		text_ui.printbuffer()
 		}
 	public UI_Parser(){
 		text_ui = new Text_UI();
 		}
-	public newGame(int i){
+	public newGame(){
+		int y = Integer.parseInt(text_ui.getCommand());
 		owner = new Owner(i);
 		}
 	public parse(String x){
