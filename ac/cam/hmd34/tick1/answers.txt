@@ -1,0 +1,41 @@
+1. 
+I added this line:
+		
+	System.out.println(i = 3);
+
+It printed out 3, confirming that (a = b) returns a as its result.
+
+2.It prints out
+	10
+	9
+This is because j-- returns j, and then decrements it. So j-- returned 10 which was printed
+and then decremented it to 9, which was printed in the final line.
+
+3. If j-- is replaced with --j, you get
+	
+	9
+	9
+	
+This is as --j decrements j before returning it.
+
+4. I used:
+
+		for(i=0; i<10;i++){
+			if ((0x55>>i)==5){
+				System.out.println("x = " + i);
+				}
+			if ((0x55<<i)==10880){
+				System.out.println("y = " + i);
+				}
+			}
+			
+x = 4, y = 7
+
+5.
+
+1<<n shifts the bit 1 left n times giving 1000 for n=3. 
+This gives 2^n as each bit is twice the value of the one before it: 100 = 2* 10.
+This means that each left shift doubles 1, and so shifting it n times gives 1*2*2...(n times)
+This equals 1*2^n = 2^n.
+
+6. This expression is (x>>4)&1 

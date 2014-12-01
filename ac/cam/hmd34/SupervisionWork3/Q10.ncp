@@ -1,0 +1,216 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Pet</Name>
+        <Access>Public</Access>
+        <Location left="274" top="10" />
+        <Size width="162" height="294" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private int age</Member>
+        <Member type="Field">private Hunger hunger</Member>
+        <Member type="Field">private Tiring tiring</Member>
+        <Member type="Field">private Owner owner</Member>
+        <Member type="Field">private int hunger_level</Member>
+        <Member type="Field">private int tiredLevel</Member>
+        <Member type="Method">public Owner getOwner()</Member>
+        <Member type="Method">public void fed()</Member>
+        <Member type="Method">public void slept()</Member>
+        <Member type="Method">public abstract void playWith()</Member>
+        <Member type="Method">public void update()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Dog</Name>
+        <Access>Public</Access>
+        <Location left="739" top="368" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void playWith()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Owner</Name>
+        <Access>Public</Access>
+        <Location left="489" top="50" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String name</Member>
+        <Member type="Field">private int age</Member>
+        <Member type="Field">private Pet pet</Member>
+        <Member type="Method">public void feedPet()</Member>
+        <Member type="Method">public void putPetToSleep()</Member>
+        <Member type="Method">public void playWithPet()</Member>
+        <Member type="Method">public Pet getPet()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>UI_Parser</Name>
+        <Access>Public</Access>
+        <Location left="753" top="50" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Owner owner</Member>
+        <Member type="Method">public void saveGame()</Member>
+        <Member type="Method">public void update()</Member>
+        <Member type="Method">public Owner newGame()</Member>
+        <Member type="Method">public Owner loadGame()</Member>
+        <Member type="Method">public void output()</Member>
+        <Modifier>Static</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Text_UI</Name>
+        <Access>Public</Access>
+        <Location left="944" top="368" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private UI_Parser ui_parser</Member>
+        <Member type="Method">public String getCommand()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GUI</Name>
+        <Access>Public</Access>
+        <Location left="944" top="50" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private UI_Parser ui_parser</Member>
+        <Member type="Method">public String getCommand()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Cat</Name>
+        <Access>Public</Access>
+        <Location left="532" top="368" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void playWith()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Ninja</Name>
+        <Access>Public</Access>
+        <Location left="351" top="368" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void playWith()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Mouse</Name>
+        <Access>Public</Access>
+        <Location left="160" top="368" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void playWith()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="5" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="5">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>602</X>
+          <Y>343</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>355</X>
+          <Y>329</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>405</X>
+          <Y>342</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>355</X>
+          <Y>331</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>355</X>
+          <Y>329</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
