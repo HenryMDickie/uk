@@ -24,7 +24,7 @@ public class Pet {
 		System.out.println("You put your " + name + " to sleep.");
 		}
 	public void playWith(){};
-	public Pet(){
-		name = "Pet";
+	public Pet(String n){
+		name = n;
 		}
 	}

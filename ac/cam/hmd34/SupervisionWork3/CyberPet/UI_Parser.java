@@ -14,7 +14,8 @@ public class UI_Parser{
 		text_ui = new Text_UI();
 		}
 	public void newGame(){
-		owner = new Owner();
+		int i = Integer.parseInt(text_ui.getCommand());
+		owner = new Owner(i);
 		}
 	public void parse(String x){
 		switch (x){
