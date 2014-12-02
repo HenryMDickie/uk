@@ -19,19 +19,20 @@ public class Owner{
 	public void playWithPet(){
 		this.pet.playWith();
 		}
-	public Owner(int i){
+	public Owner(){
 		name = "Henry";
 		age = 0;
-		switch (i){
-			case 1:	pet = new Cat();
-					break;
-			case 2: pet = new Dog();
-					break;
-			case 3: pet = new Mouse();
-					break;
-			case 4: pet = new Ninja();
-					break;
-			}
+		pet = new Pet();
+		//switch (i){
+			//case 1:	pet = new Cat();
+				//	break;
+//			case 2: pet = new Dog();
+//					break;
+//			case 3: pet = new Mouse();
+//					break;
+//			case 4: pet = new Ninja();
+	//				break;
+			//}
 			
 		}
 	}

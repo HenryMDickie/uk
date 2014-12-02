@@ -7,17 +7,16 @@ public class UI_Parser{
 	boolean cont;
 	public void update(){
 		if (owner != null) {
-			owner.update()
+			owner.update();
 			}
 		}
 	public UI_Parser(){
 		text_ui = new Text_UI();
 		}
-	public newGame(){
-		int y = Integer.parseInt(text_ui.getCommand());
-		owner = new Owner(i);
+	public void newGame(){
+		owner = new Owner();
 		}
-	public parse(String x){
+	public void parse(String x){
 		switch (x){
 			case "new game": 	newGame();
 								break;
@@ -33,15 +32,15 @@ public class UI_Parser{
 		}
 	public void gameLoop(){
 		cont = true;
-		while cont {
+		while (cont) {
 			update();
 			nextCommand = text_ui.getCommand();
 			parse(nextCommand);
 			}
 		}
-	public void Main(String[] args){
-		UI_Parser ui_parser = new ui_parser();
-		ui.parser.gameLoop();
+	public static void main(String[] args){
+		UI_Parser ui_parser = new UI_Parser();
+		ui_parser.gameLoop();
 		}
 	}
 		
