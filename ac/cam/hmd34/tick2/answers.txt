@@ -1,0 +1,8 @@
+1. bit_position = col + (8* row);
+
+2. col = i % 8
+
+3. row = i / 8
+
+4.true
+5.false

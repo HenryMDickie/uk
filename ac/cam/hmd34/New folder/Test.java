@@ -1,6 +1,11 @@
 public class Test{
+	public static void f(int[] b){
+		b = {3};
+		return;
+		}
 	public static void main(String[] args){
-		String x = System.console().readLine();
-		System.out.println(x);
+		int[] test = {3};
+		f(test);
+		System.out.println(test);
 		}
 	}
